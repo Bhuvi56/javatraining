@@ -15,7 +15,7 @@ public class Customer {
 		this.customerName = customerName;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
-		if(this.email.contains("@")||this.email.contains(".com")||this.email.contains(".in")){
+		if(email.contains("@")&&(email.contains(".com")||email.contains(".in"))){
 			  this.email = email;
 		}else {
 			throw new InvaildEmailException("Invalid mail");
@@ -44,7 +44,7 @@ public class Customer {
 	}
 	public  void setEmail(String email) throws InvaildEmailException {
 		
-		if(this.email.contains("@")||this.email.contains(".com")||this.email.contains(".in")){
+		if(email.contains("@")&&(email.contains(".com")||email.contains(".in"))){
 			  this.email = email;
 		}else {
 			throw new InvaildEmailException("Invalid mail");
