@@ -1,12 +1,16 @@
 package com.training.services;
 
-public class application {
+public class Application {
 
 	public static void main(String[] args) {
 		
 		StringService service = new StringService();
+		String city="chennai";
+		System.out.println( (String.format("%S",city)));
+		System.out.println(String.format(" %2$.3f %1$.2f  %3$.4f", 45.677,55.678,65.544));
 		
-		int key =14;
+		
+		int key =11;
 		
 		switch (key) {
 		case 1:

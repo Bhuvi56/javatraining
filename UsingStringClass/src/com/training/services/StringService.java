@@ -77,7 +77,7 @@ public class StringService {
 public void usingStringFormat(int mark1,int mark2) {
 		
 		//System.out.println(String.format("octal %o", mark));
-		System.out.println(String.format("hexa decimal %1$o,%2$x",mark1,mark2));
+		System.out.println(String.format("hexa decimal  %1$o,%2$x",mark1,mark2));
 		
 }
 public void usingStringFormat(String str1,String str2) {
