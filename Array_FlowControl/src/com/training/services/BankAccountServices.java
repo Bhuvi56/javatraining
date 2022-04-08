@@ -14,6 +14,14 @@ public class BankAccountServices {
 		}
 		return account.getBalance()*1*simpleInterest;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 	public void calculateInterest(BankAccount[] accounts) {
 		for(BankAccount eachAccount : accounts) {
 			System.out.println(calculateInterest(eachAccount));
@@ -21,6 +29,9 @@ public class BankAccountServices {
 		
 		}
 	}
+	
+	
+	
 	public double[] findInterest(BankAccount[] accounts) {
 		double[] values = new double[2];
 		int i =0;
@@ -31,9 +42,21 @@ public class BankAccountServices {
 		return values;
 		
 	}
+	
+	
+	
+	
+	
 	private double calculateByAccountType(BankAccount account,double rateOfInterest) {
 		return account.getBalance()*1*rateOfInterest;
 	}
+	
+	
+	
+	
+	
+	
+	
 	public double[] findInterestByAccountype(BankAccount[]accounts) {
 		
 	double[] values = new double[accounts.length];
