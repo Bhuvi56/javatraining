@@ -12,7 +12,7 @@ public class Application {
 		
 		System.out.println(account.getAccountHolderName());
 		
-		BankAccount account2= new BankAccount("suresh",2000);
+		BankAccount account2= new BankAccount("suresh",2000,2345566);
 		//System.out.println(BankAccount.getCount());
         //System.out.println(BankAccount.getCount());
 		
@@ -23,7 +23,7 @@ public class Application {
        
 		System.out.println("current balance of ramesh:="+account.getUpdatedBalance(3000));
        
-		System.out.println("cureent balance of ramesh:="+account.getUpdatedBalance(4500));
+		System.out.println("cureent balance of suresh:="+account2.getUpdatedBalance(4500));
         
         
 	}
