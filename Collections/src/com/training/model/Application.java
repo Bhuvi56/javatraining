@@ -1,5 +1,6 @@
 package com.training.model;
 
+import java.io.ObjectInputStream.GetField;
 import java.util.List;
 
 public class Application {
@@ -22,19 +23,24 @@ public class Application {
 		
 		CrudRepository service = new BookServices();
 		
+		
+		
 		System.out.println("is added:="+service.add(java));
 		service.add(spring);
 		service.add(css);
 		service.add(html);
 		service.add(python);
 		
-	
-		
 		List<Book>bookList = service.findAll();
 		for(Book eachBook:bookList) {
-			System.out.println(eachBook);
-		}
-
+		System.out.println(eachBook);
+	}
+		
+		//bookList.forEach(System.out::println);
+		System.out.println("grt than 800");
+		List<Book> bookList1= ((BookServices)service).getBooksGrtThan(840);
+		bookList1.forEach(System.out::println);
+		
 		
 	Book foundBook = service.findById(101);
 	System.out.println("found book"+foundBook);

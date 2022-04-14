@@ -15,9 +15,11 @@ public class ProdectService {
       }
       Iterator<Product> plist;
 		TreeSet<Product> blist = new TreeSet<>();
-		TreeSet<>.iterator();
+		
 		while (plist.hasNext()) {
-			type type = () plist.hasNext();
+			
+		
+			
 			
 		}
 
