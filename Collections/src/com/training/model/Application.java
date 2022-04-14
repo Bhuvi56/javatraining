@@ -1,6 +1,5 @@
 package com.training.model;
 
-import java.io.ObjectInputStream.GetField;
 import java.util.List;
 
 public class Application {
@@ -37,7 +36,7 @@ public class Application {
 	}
 		
 		//bookList.forEach(System.out::println);
-		System.out.println("grt than 800");
+		System.out.println("grt than 400");
 		List<Book> bookList1= ((BookServices)service).getBooksGrtThan(840);
 		bookList1.forEach(System.out::println);
 		

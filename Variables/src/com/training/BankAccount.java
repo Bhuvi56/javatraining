@@ -3,7 +3,9 @@ package com.training;
 public class BankAccount {
 	
     private static int count;
-	
+    private String accountHolderName;
+	private double balance;
+	private int accountNumber;
 	
 
 	public String getAccountHolderName() {
@@ -27,9 +29,7 @@ public class BankAccount {
 		this.balance = balance;
 		
 	}
-	private String accountHolderName;
-	private double balance;
-	private int accountNumber;
+	
 	
 	
 	//static method
