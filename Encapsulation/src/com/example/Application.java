@@ -22,8 +22,10 @@ public class Application {
 		System.out.println("roll number:"+ram.getRollNumber());
 		System.out.println("mark scored:="+ram.getMarkScored());
 		System.out.println("Student name:="+ram.getFirstName());
+		
 		Student shyam = new Student(455,"shyam",87,"mech");
 		System.out.println("Student name:="+shyam.getFirstName());
+		
 		Student magesh = new Student(777,"subramani","texttile");
 		
 		System.out.println("student Name:="+magesh.getRollNumber());

@@ -9,7 +9,7 @@ public class Student {
 	private double markScored;
 	public Student() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	public Student(int rollNumber, String firstName, double markScored)throws RangeCheckException {
 		super();

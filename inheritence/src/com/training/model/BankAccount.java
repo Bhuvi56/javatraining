@@ -4,15 +4,15 @@ public class BankAccount {
 	
 	private int accountNumber;
 	private String accountHolderName;
-	
+    private double balance;
+	private String accountType;
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return super.toString()+ this.accountNumber+","+this.accountHolderName+","+this.balance+","+this.accountType;
 	}
-	private double balance;
 	
-	private String accountType;
 	public BankAccount(int accountNumber, String accountHolderName, double balance, String accountType) {
 		super();
 		System.out.println("four arg constructor of super class  called");

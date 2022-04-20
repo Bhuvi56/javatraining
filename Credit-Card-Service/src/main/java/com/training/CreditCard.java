@@ -53,6 +53,12 @@ public class CreditCard {
 	}
 	
 	
+	public CreditCard(double cardNumber, int amountDue,String cardHolderName) {
+		super();
+		this.cardNumber = cardNumber;
+		this.cardHolderName = cardHolderName;
+		this.amountDue = amountDue;
+	}
 	public static CreditCard toArray() {
 		CreditCard Obj =  new CreditCard(23,"bhuvi", 3000);
 		// TODO Auto-generated method stub

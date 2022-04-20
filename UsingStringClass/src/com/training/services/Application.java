@@ -10,7 +10,7 @@ public class Application {
 		System.out.println(String.format(" %2$.3f %1$.2f  %3$.4f", 45.677,55.678,65.544));
 		
 		
-		int key =11;
+		int key =6;
 		
 		switch (key) {
 		case 1:

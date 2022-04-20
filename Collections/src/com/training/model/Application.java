@@ -40,6 +40,10 @@ public class Application {
 		List<Book> bookList1= ((BookServices)service).getBooksGrtThan(840);
 		bookList1.forEach(System.out::println);
 		
+		System.out.println("using Streams");
+		
+		
+		
 		
 	Book foundBook = service.findById(101);
 	System.out.println("found book"+foundBook);

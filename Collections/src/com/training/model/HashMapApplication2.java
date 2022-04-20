@@ -14,6 +14,8 @@ public class HashMapApplication2 {
 		Student ram = new Student(101,"ram",48);
 		Student ramu = new Student(102,"ramu",48);
 		Student raman = new Student(103,"raman",48);
+		
+		
 		HashMap<Integer,Student> map= new HashMap<>();
 		
 		
