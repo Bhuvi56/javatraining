@@ -14,7 +14,9 @@ public interface CrudRepository<T>{
 	
 	public T findById(int id);
 	
-	public int update(int Id,T obj);
+	//public int update(int Id,T obj);
+
+	int update(int cusId, int appNo);
 
 
 

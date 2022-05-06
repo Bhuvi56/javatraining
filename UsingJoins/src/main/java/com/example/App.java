@@ -35,11 +35,16 @@ public class App
 		Customer cust = new Customer(204,"sindhu",34968686,500);
 		LoanApplication loan =new LoanApplication(2004, cust, 3000);
 			
-		int rowAdded= customer.add(loan);
-			System.out.println("row Added:=" +rowAdded);
+	//	int rowAdded= customer.add(loan);
+		//	System.out.println("row Added:=" +rowAdded);
 
 			//int rowsRemoved = customer.remove(201);
 			//System.out.println("row deleted:="+rowsRemoved);
+		
+		
+		//int rowsUpdate = customer.update(204, 49324);
+		//System.out.println("row updated:="+rowsUpdate);  
+		
 			customer.findAll().forEach(System.out::println);
 
  			 

@@ -107,17 +107,21 @@ public int remove(int id) {
 
 
 @Override
-public int update(int Id, LoanApplication obj) {
+public int update(int cusId, int appNo) {
 	
 	int rowsUpdate=0;
-	String sql ="update bhu_customer set phoneno=? where phone_number=?";
-	String sql1 ="update bhu_loanapplication set appno=? where application_number=?";
+	String sql ="update bhu_customer set phone_Number=? where customer_id=?";
+	String sql1 ="update bhu_loanapplication set loan_amount=? where application_number=?";
 	
-	try (PreparedStatement pstmt = con.prepareStatement(sql)
-			;
+	try (PreparedStatement pstmt = con.prepareStatement(sql);
 			PreparedStatement pstmt2 = con.prepareStatement(sql1)){
+		  pstmt.setInt(2,cusId);
+	      pstmt.setLong(1,appNo);
+		pstmt2.setDouble(1,cusId);
+	      pstmt2.setInt(2,appNo);
 		  
 	      rowsUpdate = pstmt.executeUpdate();
+	      pstmt2.executeUpdate();
 	} catch (SQLException e) {
 	e.printStackTrace();
 	}

@@ -81,7 +81,7 @@ public static void findMinPrice(List<Book> bookList) {
 		
 		List<Book> bookList = Arrays.asList(java,spring,css,html,python,html2,python3);
 		
-		int key=6;
+		int key=3;
 		switch (key) {
 		case 1:
 			useDistinct(bookList);

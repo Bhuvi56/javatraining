@@ -24,8 +24,8 @@ public class Application {
 			//int rowsDeleted = service.deleteById(56);
 			//System.out.println("row deleted:="+rowsDeleted);
 			
-			int rowsUpdate = service.updatePriceByName("tv", 1450);
-			System.out.println("row updated:="+rowsUpdate);
+			//int rowsUpdate = service.updatePriceByName("tv", 1450);
+			//System.out.println("row updated:="+rowsUpdate);
 			
 			Optional<Product> found = service.findById(30);
 			if(found.isPresent()) {
