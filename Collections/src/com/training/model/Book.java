@@ -8,7 +8,7 @@ public class Book implements Comparable<Book>{
 	private double price;
 	public Book() {
 		super();
-		// TODO Auto-generated constructor stub
+	
 	}
 	public Book(int bookNumber, String bookName, String author, double price) {
 		super();
@@ -52,7 +52,7 @@ public class Book implements Comparable<Book>{
 		if(otherObj.bookNumber<this.bookNumber)return 1;
 		if(otherObj.bookNumber<this.bookNumber) return -1;
 //		
-//		// TODO Auto-generated method stub
+//		
 		return 0;
 		
 		//for abcd order

@@ -10,7 +10,8 @@ import com.training.services.CurrencyConverter;
 public class Application {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+
   //super type= new sub type
 		Function conv = new CurrencyConverter();
 		System.out.println(Function.COUNTER); 

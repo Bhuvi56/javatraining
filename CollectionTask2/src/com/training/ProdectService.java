@@ -14,7 +14,7 @@ public class ProdectService {
     	  
       }
       Iterator<Product> plist;
-		TreeSet<Product> blist = new TreeSet<>();
+		TreeSet<Product> blist = new TreeSet<>(){
 		
 		while (plist.hasNext()) {
 			
@@ -24,4 +24,4 @@ public class ProdectService {
 		}
 
 
-}
+}}

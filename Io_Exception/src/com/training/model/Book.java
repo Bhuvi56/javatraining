@@ -3,10 +3,7 @@ package com.training.model;
 import java.io.Serializable;
 
 public class Book implements Comparable<Book>,Serializable{
-	
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 2005L;
 	private int  bookNumber; 
 	private String bookName; 

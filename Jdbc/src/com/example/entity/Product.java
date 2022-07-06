@@ -7,7 +7,6 @@ public class Product {
 	private double price;
 	public Product() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Product(int productId, String productName, double price) {
 		super();
