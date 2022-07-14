@@ -23,9 +23,8 @@ public class ProductController {
 	private ProductRepository repo;
 	
 	@RequestMapping(value = "/product",method = RequestMethod.GET)
-	public String initForm(Model model) {
+	 public String initForm(Model model) {
 	   
-		
 		model.addAttribute("title", "Add Products");
 		model.addAttribute("command",entity);
 	   
