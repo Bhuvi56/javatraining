@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
+import org.springframework.stereotype.Component;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -15,12 +16,12 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-
+@Component
 public class Patient {
 	
 	
 	int patientId;
-
+  
 	String patientName;
 
 	long mobileNumber;

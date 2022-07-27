@@ -17,6 +17,14 @@ public interface DonorRepository extends JpaRepository<Donor, Integer> {
     int modifyLocation(@Param("srchId")int donorId,@Param("updateLocation")String updateLocation);
 
 
+	@Query(value = "from Donor where location=:srchLocation")
+    Donor[] searchByLocation(@Param("srchLocation")String location);
+	
+	@Query(value = "from Donor where bloodGroup=:srchBloodGroup")
+   Donor[] searchByBloodGroup(@Param("srchBloodGroup")String bloodGroup);
+
+
+	Donor save(Donor entity);
 	
 
 }

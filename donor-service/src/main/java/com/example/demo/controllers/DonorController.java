@@ -63,5 +63,24 @@ public class DonorController {
 
 	}
 }
+
+@GetMapping(path = "/srch/location/{location}")
+public Donor[] getByLocation(@PathVariable("location")String location){
+
+ return this.service. srchByLocation(location);
+}
+
+@GetMapping(path = "/srch/bloodgroup/{bloodGroup}")
+public Donor[] getByBloodGroup(@PathVariable("bloodGroup")String bloodGroup){
+
+ return this.service. srchByBloodGroup(bloodGroup);
+}
+
+@PutMapping(path = "/update")
+public Donor saveOrUpdate(@RequestBody Donor entity) {
+	
+	return this.service.saveOrUpdate(entity);
+}
+
 	
 }

@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.entity.Donor;
+
 
 import com.example.demo.entity.Patient;
 import com.example.demo.repos.PatientRepository;
@@ -31,11 +31,11 @@ public class PatientService {
 		return repo.findAll();
 	}
 	
-	  public List<Donor> srchByLocation(String location){
+	  public Patient[] srchByLocation(String location){
 		   return this.repo.searchByLocation(location);
 	   }
 	  
-	  public List<Donor> srchByBloodGroup(String bloodGroup){
+	  public Patient[] srchByBloodGroup(String bloodGroup){
 		   return this.repo.searchByBloodGroup(bloodGroup);
 	   }
 

@@ -41,6 +41,19 @@ public class DonorService {
 
 	   
 	   }
+	  
+	  public Donor[] srchByLocation(String location){
+		   return this.repo.searchByLocation(location);
+	   }
+	  
+	  public Donor[] srchByBloodGroup(String bloodGroup){
+		   return this.repo.searchByBloodGroup(bloodGroup);
+	   }
+	  
+	  public Donor saveOrUpdate (Donor entity) {
+		  return this.repo.save(entity);
+	  }
+
 
 
 }

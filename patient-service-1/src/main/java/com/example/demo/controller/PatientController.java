@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.Donor;
+
 
 import com.example.demo.entity.Patient;
 import com.example.demo.service.PatientService;
@@ -38,15 +38,15 @@ public class PatientController {
 		return this.service.findAll();
 	}
 	
-	@GetMapping(path = "/donors/srch/location/{location}")
-	public List<Donor> getByLocation(@PathVariable("location")String location){
+	@GetMapping(path = "/srch/location/{location}")
+	public Patient[] getByLocation(@PathVariable("location")String location){
 
 	 return this.service. srchByLocation(location);
 	}
 	
 	
-	@GetMapping(path = "/donors/srch/bloodgroup/{bloodGroup}")
-	public List<Donor> getByBloodGroup(@PathVariable("bloodGroup")String bloodGroup){
+	@GetMapping(path = "/srch/bloodgroup/{bloodGroup}")
+	public Patient[] getByBloodGroup(@PathVariable("bloodGroup")String bloodGroup){
 
 	 return this.service. srchByBloodGroup(bloodGroup);
 	}
