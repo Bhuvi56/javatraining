@@ -28,7 +28,13 @@ public class SpringJdbcApplication {
 	//System.out.println("one row updated:=" +repo.update(fridge));
 	
 	  // find by id
-	System.out.println("findby id:="+repo.findById(94).get());
+	
+	try {
+		System.out.println("findby id:="+repo.findById(94).get());
+	} catch (NullPointerException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
  
   
 	}

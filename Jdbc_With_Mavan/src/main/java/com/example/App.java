@@ -1,5 +1,7 @@
 package com.example;
 
+
+// sonar:sonar -Dsonar.host.url=http://localhost:9000 
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -44,7 +46,7 @@ public class App
         
         Connection con;
 		try {
-			con= DriverManager.getConnection("jdbc:oracle:thin:@10.90.1.105:1521/DEV","HR","HR");
+			con= DriverManager.getConnection("jdbc:oracle:thin:@10.90.1.107:1521/SIT","HR","HR");
 			con=ConnectionFactory.getOracleConnection();
 			//con=ConnectionFactory.getPostgressConnection();
 			 

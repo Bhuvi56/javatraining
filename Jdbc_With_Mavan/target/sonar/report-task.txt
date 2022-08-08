@@ -1,0 +1,5 @@
+projectKey=com.example:Jdbc_With_Mavan
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/com.example:Jdbc_With_Mavan
+ceTaskId=AYJnXi8d5m_lLzgnqkWE
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYJnXi8d5m_lLzgnqkWE
